@@ -1,0 +1,31 @@
+.welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  background-color: #fff;
+}
+.welcome .content {
+  width: 600px;
+  height: 400px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.welcome .content .title {
+  font-size: 2em;
+}
+.welcome .content .subtitle {
+  font-size: 4em;
+  font-weight: 600;
+}
+.welcome .img {
+  width: 600px;
+  height: 400px;
+  background: url('/imgs/welcome-bg.png');
+  background-size: contain;
+}

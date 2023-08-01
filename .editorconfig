@@ -1,0 +1,10 @@
+# https://editorconfig.org 针对代码在不同编辑器的格式保持一致  vscode需要安装editorconfig
+root = tue
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true

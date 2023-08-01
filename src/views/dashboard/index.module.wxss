@@ -1,0 +1,67 @@
+.mr20 {
+  margin-right: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.pd20 {
+  padding: 20px;
+}
+.containerWarapper {
+  background-color: #fff;
+  padding: 10px;
+}
+.userinfo {
+  display: flex;
+  align-items: center;
+  height: 140px;
+  gap: 10px;
+  padding: 10px;
+}
+.userinfo .userImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.report {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.report .card {
+  flex: 1;
+  color: #fff;
+  border-radius: 5px;
+  height: 90px;
+  padding: 10px;
+}
+.report .card .content {
+  text-align: center;
+  font-size: 24px;
+}
+.report .card:nth-child(1) {
+  background-color: #f27b45;
+}
+.report .card:nth-child(2) {
+  background-color: #7c72d7;
+}
+.report .card:nth-child(3) {
+  background-color: #438adf;
+}
+.report .card:nth-child(4) {
+  background-color: #63bbd3;
+}
+.charts {
+  margin-bottom: 20px;
+}
+.charts .chart {
+  height: 400px;
+}
+.charts .pies {
+  display: flex;
+  align-items: center;
+}
+.charts .pies .pieChart {
+  flex: 1;
+  height: 400px;
+}
