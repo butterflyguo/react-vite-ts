@@ -4,7 +4,6 @@ import api from '@/api/user'
 import storage from '@/utils/storage';
 export default function () {
   const onFinish = (values: any) => {
-    console.log('Success:', values)
     api.login(values).then(res => {
       storage.local.set('token',res)
       const params = new URLSearchParams(location.search);

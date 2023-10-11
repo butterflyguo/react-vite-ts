@@ -5,7 +5,7 @@ import FormItem from 'antd/es/form/FormItem'
 import { Dept } from '@/types/api'
 import api from '@/api'
 
-export default (props: IModalProp) => {
+export default (props: IModalProp<Dept.DeptItem>) => {
   const [form] = Form.useForm()
   const [visible, setVisible] = useState(false)
   const [action, setAction] = useState<IAction>('create')

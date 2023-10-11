@@ -12,6 +12,7 @@ const App: React.FC = () => {
     // const [userInfo,setUserInfo] = useState({})
     const store = useStore();
     const collapsed = useStore(state=>state.collapsed)
+    console.log(collapsed,'collapsed')
     useEffect(()=>{
         api.queryUserInfo().then(res=>{
             console.log(res,'res')
@@ -26,7 +27,7 @@ const App: React.FC = () => {
   return (
     <Layout style={{height: '100%'}}>
       <Sider trigger={null} collapsible collapsed={collapsed}>
-       <Menu/>
+       <Menu />
       </Sider>
       <Layout>
         <NavHeader />

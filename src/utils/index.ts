@@ -44,9 +44,16 @@ export const toLocalDate = (date?:Date,rule?:string) => {
     if(rule === 'HH:mm:ss') return timeResult
     return dateResult+' '+timeResult
 }
-
+//用户状态转换
 export const formatState = (state:number) =>{
     if(state === 1) return '在职'
     if(state === 2) return '离职'
     if(state === 3) return '试用期'
+}
+//获取页面路径
+import {Menu} from "@/types/api"
+export const getMenuPath = (list:Menu.MenuItem[]):string[]=>{
+    return list.reduce((result:string[],item:Menu.MenuItem)=>{
+      return  result.concat(Array.isArray(item.children) && !item.buttons?getMenuPath(item.children):item.path+'')
+    },[])
 }

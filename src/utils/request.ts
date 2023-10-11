@@ -23,7 +23,7 @@ instance.interceptors.request.use(function (config) {
   if(token && !isToken) 
   config.headers.Authorization = "Bearer "+token;
   // config.headers['UnibuitAuth'] = 'Unibuit ' + getToken() // 让每个请求携带自定义token 请根据实际情况自行修改
-  config.headers.icode = "E69163D5ABC1EE69";
+  config.headers.icode = "57C38A82C67AED26";
   return config;
 }, function (error:AxiosError) {
   // 对请求错误做些什么
